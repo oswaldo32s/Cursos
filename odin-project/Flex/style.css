@@ -78,3 +78,92 @@ a {
 .info-card p {
     text-align: center;
 }
+
+.act-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 350px;
+}
+
+.alarm {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.alarm-left {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.alarm-sign {
+    color: #2054a1;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #b4a8eb;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alarm-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.title-x {
+    font-weight: 900;
+    background-color: #cacaca;
+    color: #525252;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+.continue-button {
+    color: white;
+    background-color: #2054a1;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+}
+
+.text-section {
+    margin: 5px;
+}
+.cancel-button {
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    width: 100px;
+}
