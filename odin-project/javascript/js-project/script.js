@@ -52,11 +52,47 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-function playGame() {
-    for (let i = 0; i <5; i++) {
-        console.log(playRound(getHumanChoice() , getComputerChoice()))
-        console.log(`Current score Human: ${humanScore} vs Computer: ${computerScore}`)
+const winMessage = document.createElement('h3')
+winMessage.textContent = 'You WOOON!!'
+const loseMessage = document.createElement('h3')
+loseMessage.textContent = 'You Lose!!'
+
+function playGame(humanChoice) {
+
+    console.log(playRound(humanChoice , getComputerChoice()))
+
+    const score = document.querySelector('.score')
+    if (document.querySelector('.current-score')) {
+        score.removeChild(document.querySelector('.current-score'))
+    }
+    const currentScore = document.createElement('p')
+    currentScore.classList.add('current-score')
+    currentScore.textContent = `Current Score: You ${humanScore} vs Computer ${computerScore}`
+    score.appendChild(currentScore)
+
+    if (humanScore == 5){
+        score.removeChild(document.querySelector('.current-score'))
+        score.appendChild(winMessage)
+    } else if (computerScore == 5) {
+        score.removeChild(document.querySelector('.current-score'))
+        score.appendChild(loseMessage)
     }
 }
 
-playGame()
+const rock = document.querySelector('.rock')
+rock.addEventListener('click', (e) => {
+    playGame('rock')
+    
+})
+
+const paper = document.querySelector('.paper')
+paper.addEventListener('click', (e) => {
+    playGame('paper')
+})
+
+const scissors = document.querySelector('.scissors')
+scissors.addEventListener('click', (e) => {
+    playGame('scissors')
+})
+
+
