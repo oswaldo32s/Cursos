@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Intermediate HTML & CSS</title>
+</head>
+<body>
+    <header>
+        <div class="web-title"><a href="./index.html">Intermediate HTML & CSS</a></div>
+        <nav>
+            <ul class="nav-list">
+                <li>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="theme-button"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" /><path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" /><path d="M9.7 17l4.6 0" /></svg>
+                </li>
+                <li><a href="./html-home.html">HTML</a></li>
+                <li><a href="./css-home.html">CSS</a></li>
+                <li><a href="./contact-me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Tables</h2>
+            <p>Probably something I might not use that often, so it is very important to keep this notes saved</p>
+            <h3>Main table elements</h3>
+            <ul>
+                <li>&lt;table&gt; - This will mark the beginning and end of the table. </li>
+                <li>&lt;thead, tbody, tfoot&gt; - This is pure semantic.</li>
+                <li>&lt;tr&gt; - This will create a new row on the table.</li>
+                <li>&lt;th&gt; - This will create a header title.</li>
+                <li>&lt;td&gt; - This will create a regular data cell in the table.</li>
+            </ul>
+            <p>You can add colspan="" or rowspan="" to make a th or td take more than 1 space.</p>
+            <h3>Table Styling</h3>
+            <p>For a better look on the tables it is important to add the following styling:</p>
+            <div class="table-code">
+                <section class="code">
+                    <p> 
+                       table, th, td { <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp; border: 1px solid white;<br>
+                       &nbsp;&nbsp;&nbsp;&nbsp; border-collapse: collapse;<br>
+                       }
+                   </p>
+               </section>
+            </div>
+            <h3>Table example</h3>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th colspan="5">Community Courses -- Bath Autumn 1997</th>
+                    </tr>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course Tutor</th>
+                        <th>Summary</th>
+                        <th>Code</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>After the Civil War</td>
+                        <td>Dr. John Wroughton</td>
+                        <td>The course will examine the turbulent years in England after 1646. 6 weekly meetings starting Monday 13th October</td>
+                        <td>H27</td>
+                        <td>$32</td>
+                    </tr>
+                    <tr>
+                        <td>An Introduction to Anglo-Saxon England</td>
+                        <td>Mark Cottle</td>
+                        <td>One day course introducing the early medieval period reconstruction the Anglo-Saxons and their society. Saturday 18th October.</td>
+                        <td>H28</td>
+                        <td>$18</td>
+                    </tr>
+                    <tr>
+                        <td>The Glory that was Greece</td>
+                        <td>Valerie Lorenz</td>
+                        <td>Birthplace of democracy, philosophy, heartland of theater, home of argument. The Romans may have done it but the Greeks did it first. Saturday day school 25th October 1997.</td>
+                        <td>H30</td>
+                        <td>$18</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </article>
+        <article>
+            <h2>Forms</h2>
+            <p>Probably this is something that I'll be using a lot in my future projects, I want to have it at hand to be able to see all the resources available.</p>
+            <h3>Main Form elements</h3>
+            <ul>
+                <li>&lt;form&gt; &lt;form/&gt;</li>
+                <li>&lt;label for=""&gt; &lt;label/&gt;</li>
+                <li>&lt;input id="" name="" type="checkbox,date,email,file,image,number,password,radio,range,text" /&gt;</li>
+                <li>&lt;fieldset&gt; &lt;fieldset /&gt;</li>
+                <li>&lt;legend&gt; &lt;legend /&gt;</li>
+                <li>&lt;textarea name="" rows="" cols="" &gt;</li>
+                <li>&lt;select id="" name="" size=""&gt; &lt;select /&gt;</li>
+                <li>&lt;option value=""&gt; &lt;option /&gt;</li>
+            </ul>
+        </article>
+    </main>
+
+</body>
+</html>
