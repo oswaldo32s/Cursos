@@ -3,6 +3,10 @@
     src: url(./fonts/SyneMono-Regular.ttf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -38,6 +42,9 @@ label {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     width: 45vw;
 }
@@ -46,8 +53,9 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     padding: 10px;
+    height: 7rem;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.55);
 }
 
