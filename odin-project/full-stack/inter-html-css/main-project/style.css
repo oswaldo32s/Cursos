@@ -170,3 +170,9 @@ form {
     padding: 3px 7px;
     border-radius: 5px;
   }
+
+  .sign-up {
+    background-color: #229199;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
