@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="left-section">
+        <div class="logo">
+            <img class="img-logo" src="./img/odin.png" alt="odin logo">
+            <p class="odin-font">ODIN</p>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="container">
+            <h3>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest deams.
+                <br> Sign up <em>now</em> to get started.</em>
+                <br>You <em>know</em> you want to.
+            </h3>
+        </div>
+        <div class="container form-container">
+            <h3>Let's do this!</h3>
+            <form class="sign-in" id="sign-in" action="#">
+                <div class="left-form">
+                    <label for="first-name">First Name</label><br>
+                    <input type="text" name="firstName" id="first-name" required minlength="3" maxlength="20"><br>
+                    <label for="email">email</label><br>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" required minlength="8"><br>
+                </div>
+                <div class="right-form">
+                    <label for="last-name">Last Name</label><br>
+                    <input type="text" name="lastName" id="last-name" required required minlength="3" maxlength="20"><br>
+                    <label for="phone-number">Phone Number</label><br>
+                    <input type="number" name="phoneNumber" id="phone-number" required minlength="10" maxlength="10"><br>
+                    <label for="confirm-password">Confirm Password</label><br>
+                    <input type="password" name="confirmPassword" id="confirm-password" required minlength="8"><br>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <button class="create-account" form="sign-in" type="submit">Create Account</button>
+            <p>Already have an account? <span class="log-in">Log in</span></p>
+        </div>
+    </div>
+</body>
+</html>
