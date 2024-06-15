@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: #DDD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+}
+
+nav {
+    background-color: #658864;
+    color: #fdf6fd;
+    height: 100%;
+    width: max(200px, 15%);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.nav-item a {
+    color: #fdf6fd;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.right-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+header {
+    background-color: #fdf6fd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 0 20px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search-section {
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+
+.profile-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: min(250px, 15%);
+}
+
+.profile-section a {
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-left {
+    width: 100%;
+    overflow: auto;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: #fdf6fd;
+    border-radius: 10px;
+    border-left: 8px solid #ecd79b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.project-icons svg {
+    stroke: #292524;
+}
+
+.project-text h3 {
+    margin: 0;
+}
+
+.project-text p {
+    padding: 5px 0;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.main-right {
+    width: max(300px, 20%);
+}
+
+.right-box {
+    background-color: #fdf6fd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.right-box h4 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.right-box > *:not(:last-child){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DDD;
+}
+
+.right-box p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.button-section {
+    display: flex;
+    gap: 20px;
+}
+
+.action-button {
+    background-color: #658864;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100px;
+    color: #fdf6fd;
+    font-weight: 600;
+    text-align: center;
+}
+
+#search-bar {
+    background-color: #DDD;
+    border: none;
+    border-radius: 20px;
+    margin: 0 15px;
+    height: 1.5rem;
+    width: 100%;
+}
+
+.main-profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.greetings h1, p{
+    margin: 0;
+}
+
+.trending-users {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-tag {
+    font-weight: 600;
+}
