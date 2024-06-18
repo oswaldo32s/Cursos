@@ -1,0 +1,11 @@
+:root.light {
+    --background-color: #f5faf9;
+    --font-color: #102437;
+    --font-accent: #ec4638;
+}
+
+:root.light {
+    --background-color: #102437;
+    --font-color: #f5faf9;
+    --font-accent: #ec4638;
+}
