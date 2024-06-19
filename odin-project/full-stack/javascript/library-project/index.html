@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>My Library</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>My personal library</h1>
+    </header>
+    <main>
+        <button class="add-book-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus"><path d="M0 0h24v24H0z" stroke="none"/><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0M9 12h6M12 9v6"/></svg>
+            Add Book
+        </button>
+        <form action="" class="book-form">
+            <ul>
+                <li>
+                    <label for="form-book-title">Book Title</label>
+                    <input type="text" name="bookTitle" id="form-book-title" required>
+                </li>
+                <li>
+                    <label for="form-book-author">Book Author</label>
+                    <input type="text" name="bookAuthor" id="form-book-author" required>
+                </li>
+                <li>
+                    <label for="form-book-pages">Book Pages</label>
+                    <input type="number" name="bookPages" id="form-book-pages" required>
+                </li>
+                <li>
+                    <label for="form-book-read">Have you read the book?</label>
+                    <select name="haveYouReadBook" id="form-book-read" required>
+                        <option value="Read">Read</option>
+                        <option value="Not Read">Not Read</option>
+                    </select>
+                </li>
+            </ul>
+            <button class="submit-form">Submit</button>
+        </form>
+        <section class="my-books">
+
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
