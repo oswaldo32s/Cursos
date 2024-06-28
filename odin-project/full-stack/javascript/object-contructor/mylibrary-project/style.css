@@ -1,0 +1,121 @@
+body {
+  background-color: #faebd7;
+  font-family: ubuntu, roboto, sans-serif;
+  color: #292929;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER SECTION */
+
+.web-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-section {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header-nav {
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+
+.header-nav ul {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav-item a {
+  color: #292929;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* ADD BOOK SECTION */
+
+.add-book {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid hsl(34, 20%, 70%);
+  border-radius: 10px;
+  padding: 20px;
+  width: 70vw;
+  gap: 20px;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-inputs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1.8rem;
+}
+
+.small-inputs label{
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  font-weight: 500;
+}
+
+.small-inputs input {
+  background-color: hsl(34, 20%, 70%);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.book-read {
+  background-color: hsl(34, 20%, 70%);
+  border: none;
+  border-radius: 5px;
+}
+
+.description-label {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+.description-input {
+  background-color: hsl(34, 20%, 70%);
+  border: none;
+  border-radius: 5px;
+  height: 3.7rem;
+  outline: none;
+}
+
+.add-book-btn {
+  font-weight: 500;
+  margin-top: 20px;
+  height: 1.8rem;
+  border: 1px solid hsl(34, 20%, 70%);
+  border-radius: 5px;
+}
+
+.add-book-btn:active {
+  border: #faebd7;
+}
