@@ -1,0 +1,46 @@
+body {
+  background-color: #faebd7;
+  font-family: ubuntu, roboto, sans-serif;
+}
+
+/* HEADER SECTION */
+
+.web-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-section {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.header-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  color: #292929;
+}
+
+.header-nav {
+  align-items: center;
+  display: flex;
+  padding: 0 20px;
+}
+
+.header-nav ul {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav-item a {
+  color: #292929;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
