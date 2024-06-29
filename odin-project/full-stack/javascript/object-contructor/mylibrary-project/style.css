@@ -1,13 +1,13 @@
 body {
   background-color: #faebd7;
-  font-family: ubuntu, roboto, sans-serif;
   color: #292929;
+  font-family: ubuntu, roboto, sans-serif;
 }
 
 main {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* HEADER SECTION */
@@ -25,8 +25,8 @@ main {
 }
 
 .header-logo {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .header-nav {
@@ -51,15 +51,15 @@ main {
 /* ADD BOOK SECTION */
 
 .add-book {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
   background-color: white;
   border: 2px solid hsl(34, 20%, 70%);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
   padding: 20px;
   width: 90vw;
-  gap: 20px;
 }
 
 .add-book-form {
@@ -75,10 +75,10 @@ main {
 }
 
 .small-inputs label{
-  display: flex;
-  padding: 0 10px;
   align-items: center;
+  display: flex;
   font-weight: 500;
+  padding: 0 10px;
 }
 
 .small-inputs input {
@@ -95,9 +95,9 @@ main {
 }
 
 .description-label {
+  font-weight: 500;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-weight: 500;
 }
 
 .description-input {
@@ -109,11 +109,11 @@ main {
 }
 
 .add-book-btn {
-  font-weight: 500;
-  margin-top: 20px;
-  height: 1.8rem;
   border: 1px solid hsl(34, 20%, 70%);
   border-radius: 5px;
+  font-weight: 500;
+  height: 1.8rem;
+  margin-top: 20px;
 }
 
 .add-book-btn:active {
