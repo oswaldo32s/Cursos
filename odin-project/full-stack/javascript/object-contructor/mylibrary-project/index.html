@@ -23,26 +23,39 @@
         </nav>
     </header>
     <main>
+        <section class="add-book-btn-section">
+            <button class="btn-add-book">Add new book <span class="plus">＋</span></button>
+        </section>
         <section class="add-book">
             <h2>Add New Book</h2>
             <form class="add-book-form" action="#">
                 <div class="small-inputs">
-                    <label for="book-name">Name:</label>
-                    <input id="book-name" type="text" minlength="4" required>
-                    <label for="book-author">Author:</label>
-                    <input id="book-author" type="text" minlength="10" required>
-                    <label for="book-year">Year:</label>
-                    <input id="book-year" type="number" min="0" required>
-                    <label for="book-pages">Pages:</label>
-                    <input id="book-pages" type="number" min="0" required>
-                    <label for="book-read">Read:</label>
-                    <select id="book-read" class="book-read" name="book-read" id="book-read" required>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
+                    <div class="question-container">
+                        <label class="new-book-form-label" for="book-name">Name:</label><br>
+                        <input class="form-input" id="book-name" type="text" minlength="4" required>
+                    </div>
+                    <div class="question-container">
+                        <label class="new-book-form-label" for="book-author">Author:</label><br>
+                        <input class="form-input" id="book-author" type="text" minlength="10" required>
+                    </div>
+                    <div class="question-container">
+                        <label class="new-book-form-label" for="book-year">Year:</label><br>
+                        <input class="form-input" id="book-year" type="number" min="0" required>
+                    </div>
+                    <div class="question-container">
+                        <label class="new-book-form-label" for="book-pages">Pages:</label><br>
+                        <input class="form-input" id="book-pages" type="number" min="0" required>
+                    </div>
+                    <div class="question-container">
+                        <label class="new-book-form-label" for="book-read">Read:</label><br>
+                        <select id="book-read" class="book-read form-input" name="book-read" id="book-read" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
                 </div>
-                <label class="description-label" for="book-description">Description:</label>
-                <textarea id="book-description" class="description-input" name="description" id="description" required></textarea>
+                <label class="new-book-form-label" for="book-description">Description:</label>
+                <textarea id="book-description" class="description-input form-input" name="description" id="description" required></textarea>
                 <button class="add-book-btn" type="button">Add Book</button>
             </form>
         </section>
