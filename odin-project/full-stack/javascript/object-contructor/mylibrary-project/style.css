@@ -154,3 +154,51 @@ main {
 .active {
   display: flex;
 }
+
+/* BOOK SECTION */
+
+.book-section {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 20px;
+}
+
+.book-container {
+  border: 1px solid hsl(34, 20%, 70%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-delete {
+  align-items: center;
+  border: 1px solid #292929;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.book-delete:hover {
+  background-color: rgb(200, 100, 100);
+}
+
+.book-read {
+  border: 1px solid #292929;
+  background-color: rgb(57, 175, 57);
+  color: white;
+  height: 1.7rem;
+}
+
+.book-not-read {
+  border: 1px solid #292929;
+  background-color: rgb(185, 71, 71);
+  color: white;
+  height: 1.7rem;
+}
