@@ -9,7 +9,13 @@ function Book(name, year, author, pages, description, read) {
     this.bookDescription = description
 }
 
-addBookBtn = document.querySelector('.add-book-btn')
+const addBookBtn = document.querySelector('.add-book-btn')
+const showFormBtn = document.querySelector('.btn-add-book')
+
+showFormBtn.addEventListener('click', () => {
+    const formSection = document.querySelector('.add-book')
+    formSection.classList.toggle('active')
+})
 
 addBookBtn.addEventListener('click', addNewBook)
 
