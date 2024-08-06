@@ -28,20 +28,20 @@ const myLocalLibrary = [
 let currentID = 0
 const myLibrary = []
 
-function Book(name, year, author, pages, description, read) {
-    this.bookID = currentID
-    this.bookName = name
-    this.bookAuthor = author
-    this.bookYear = year
-    this.bookPages = pages
-    this.bookRead = read
-    this.bookDescription = description
-
-    currentID++
-}
-
-Book.prototype.toggleBookRead = function() {
-    this.bookRead = this.bookRead == 'I already read it' ? 'No, I have not read it' : 'I already read it'
+class Book {
+    constructor(name, year, author, pages, description, read) {
+        this.bookID = currentID
+        this.bookName = name
+        this.bookAuthor = author
+        this.bookYear = year
+        this.bookPages = pages
+        this.bookRead = read
+        this.bookDescription = description
+        currentID++
+    }
+    toggleBookRead() {
+        this.bookRead = this.bookRead == 'I already read it' ? 'No, I have not read it' : 'I already read it'
+    }
 }
 
 myLocalLibrary.forEach(book => {
