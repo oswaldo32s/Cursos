@@ -1,3 +1,5 @@
+import AboutPage from "../AboutUs/aboutUs"
+import MenuPage from "../Menu/menu"
 import overviewCard from "./overview"
 
 function HomePage() {
@@ -30,8 +32,8 @@ function HomePage() {
     mainElement.appendChild(overviewContainer)
 
     // Add the cards to the home page
-    overviewContainer.appendChild(overviewCard('¡Explora Nuestro Menú!', 'Tienes antojo de algo delicioso? Dale un vistazo a nuestras irresistibles opciones. Desde las clásicas hamburguesas que amas hasta nuestras creaciones exclusivas, cada platillo en nuestro menú está hecho para satisfacer tu apetito.', 'Menú'))
-    overviewContainer.appendChild(overviewCard('Conócenos Mejor', "Descubre la historia y la pasión detrás de Paty's Burgers. Aprende cómo nacimos, nuestra misión, y por qué cada hamburguesa es una obra maestra.", 'Conócenos!'))
+    overviewContainer.appendChild(overviewCard('¡Explora Nuestro Menú!', 'Tienes antojo de algo delicioso? Dale un vistazo a nuestras irresistibles opciones. Desde las clásicas hamburguesas que amas hasta nuestras creaciones exclusivas, cada platillo en nuestro menú está hecho para satisfacer tu apetito.', 'Menú', MenuPage))
+    overviewContainer.appendChild(overviewCard('Conócenos Mejor', "Descubre la historia y la pasión detrás de Paty's Burgers. Aprende cómo nacimos, nuestra misión, y por qué cada hamburguesa es una obra maestra.", 'Conócenos!', AboutPage))
 }
 
 export default HomePage

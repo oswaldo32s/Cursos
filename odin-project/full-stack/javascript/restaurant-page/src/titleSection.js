@@ -1,4 +1,4 @@
-function MenuSection(sectionName){
+function TitleSection(sectionName){
     //Create section
     const sectionTitle = document.createElement('h2')
     sectionTitle.classList.add('section-title')
@@ -7,4 +7,4 @@ function MenuSection(sectionName){
     return sectionTitle
 }
 
-export default MenuSection
+export default TitleSection

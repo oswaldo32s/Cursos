@@ -1,4 +1,4 @@
-function overviewCard(title, description, btnMgs) {
+function overviewCard(title, description, btnMgs, buttonFun) {
     const cardContainer = document.createElement('div')
     cardContainer.classList.add('card-container')
     const cardTitle = document.createElement('h3')
@@ -11,6 +11,9 @@ function overviewCard(title, description, btnMgs) {
     cardDescription.classList.add('card-description')
     cardButton.textContent = btnMgs
     cardButton.classList.add('card-btn')
+
+    // Add event listener
+    cardButton.addEventListener('click', buttonFun)
 
     cardContainer.appendChild(cardTitle)
     cardContainer.appendChild(cardDescription)

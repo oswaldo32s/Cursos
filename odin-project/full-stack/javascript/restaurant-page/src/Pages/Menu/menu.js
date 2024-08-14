@@ -1,5 +1,5 @@
 import MenuCard from "./menuCard"
-import MenuSection from "./menuSection"
+import MenuSection from "../../titleSection"
 
 function MenuPage() {
     // Erase everything from main page, this will help us when using nav buttons
