@@ -1,0 +1,138 @@
+:root {
+    --primary-100:#34495E;
+    --primary-200:#60748b;
+    --primary-300:#bfd4ee;
+    --accent-100:#2980B9;
+    --accent-200:#d0ffff;
+    --text-1:#ECF0F1;
+    --text-2:#ced1d2;
+    --bg-container-dark:#2C3E50;
+    --main-bg:#3d4f61;
+    --bg-container-light:#57687c;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-bg);
+}
+
+header {
+    background-color: var(--bg-container-dark);
+    border-bottom: 2px solid var(--primary-200);
+}
+
+.hidden {
+    display: none;
+}
+
+.main-body {
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    color: var(--text-1);
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.todo-logo {
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.task-nav {
+    width: 25vw;
+}
+
+.ul-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 10px;
+    border-right: 2px solid var(--primary-200);
+    height: calc(100vh - 50px);
+}
+
+/* -- Side Task -- */
+
+.task-icon {
+    width: 30px;
+    margin: 10px;
+}
+
+.task-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-1);
+}
+
+.sidebar-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.personalized-projects {
+    margin-left: 25px;
+}
+
+.project-img {
+    width: 20px;
+    margin: 10px;
+}
+
+.project-btn {
+    background-color: var(--main-bg);
+    border: none;
+    display: flex;
+    align-items: center;
+    color: var(--text-1);
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+/* -- Project and Tasks Table -- */
+
+.main-task-container {
+    width: 75vw;
+    padding: 20px;
+}
+
+.task-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.task-table th, .task-table td {
+    border: 1px solid var(--bg-container-light);
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-2);
+}
+
+.edit-cell {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.edit-img {
+    width: 20px;
+    cursor: pointer;
+}
+
