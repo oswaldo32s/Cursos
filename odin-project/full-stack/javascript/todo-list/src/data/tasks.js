@@ -21,5 +21,12 @@ export const defaultTasks = [
         dueDate: format(new Date(2024, 8, 31), 'MM/dd/yyyy'),
         priority: 'High',
         project: 'default'
+    },
+    {
+        title: 'This is my first task for Todo List',
+        description: "This task is to test my website to make sure I can filter by projects",
+        dueDate: format(new Date(2024, 8, 31), 'MM/dd/yyyy'),
+        priority: 'High',
+        project: 'ToDo List'
     }
 ]
