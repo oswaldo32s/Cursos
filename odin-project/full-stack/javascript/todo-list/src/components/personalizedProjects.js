@@ -1,5 +1,6 @@
 import AddImg from '../img/add.png'
 import ProjectImg from '../img/project-icon.png'
+import NewProject from './newProject'
 import TaskBoard from './taskBoard'
 
 export default function PersonalizedProjectNav() {
@@ -23,6 +24,10 @@ export default function PersonalizedProjectNav() {
     // Append Img and text to button
     addNewProjectButton.appendChild(AddImgBtn)
     addNewProjectButton.appendChild(addNewProjectText)
+    addNewProjectButton.addEventListener('click', () => {
+        const newProjectCard = document.querySelector('.new-project-container')
+        newProjectCard.classList.toggle('hidden')
+    })
 
     JSON.parse(localStorage.projects).forEach(project => {
         const projectContainer = document.createElement('button')
@@ -35,7 +40,6 @@ export default function PersonalizedProjectNav() {
         const projectText = document.createElement('span')
         projectText.textContent = project.projectName
 
-        console.log(project.projectName)
         projectContainer.appendChild(defaultProjectIcon)
         projectContainer.appendChild(projectText)
         projectContainer.addEventListener('click', () => TaskBoard(project.projectName))

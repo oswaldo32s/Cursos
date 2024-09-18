@@ -6,6 +6,9 @@ import PersonalizedProjectNav from './personalizedProjects'
 
 export default function TaskSections() {
 
+    const sideNav = document.querySelector('.task-nav')
+    sideNav.innerHTML = ''
+
     //Create unordered list element
     const ul = document.createElement('ul')
     ul.classList.add('ul-nav')
@@ -84,6 +87,6 @@ export default function TaskSections() {
     ul.appendChild(todayTasks)
     ul.appendChild(projects)
 
-    return ul
+    sideNav.appendChild(ul)
 
 }
