@@ -4,6 +4,7 @@ import TaskSections from './components/TaskSections'
 import {defaultTasks} from './data/tasks'
 import {projects} from './data/projects'
 import TaskBoard from './components/taskBoard'
+import NewProject from './components/newProject'
 
 // Create the items in local Storage
 if (!localStorage.tasks) {
@@ -19,11 +20,8 @@ const header = document.querySelector('.main-header')
 // Add logo to header
 header.appendChild(MainHeader())
 
-// Side Nav Bar
-const sideNav = document.querySelector('.task-nav')
-
-// append tasks headers
-sideNav.appendChild(TaskSections())
+TaskSections()
+NewProject()
 
 // Run the Task Board components
 TaskBoard('default')

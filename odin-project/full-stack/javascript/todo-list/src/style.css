@@ -136,3 +136,69 @@ header {
     cursor: pointer;
 }
 
+/* -- New Project Tab -- */
+.new-project-container {
+    position: fixed;
+    background-color: var(--bg-container-dark);
+    width: 50vw;
+    height: 25vw;
+    z-index: 10;
+    top: 25vh;
+    left: 25vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.new-project-section {
+    height: 100%;
+}
+.new-project-header {
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-1);
+}
+
+.new-project-form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.new-project-form-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.label-project-name{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-1);
+}
+
+#newProjectName {
+    width: 60%;
+}
+
+.close-container {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    margin: 5px;
+}
+
+.close-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
