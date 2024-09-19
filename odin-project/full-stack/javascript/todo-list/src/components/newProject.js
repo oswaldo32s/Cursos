@@ -23,6 +23,10 @@ export default function NewProject() {
     const closeIcon = new Image()
     closeIcon.src = CloseImg
     closeIcon.classList.add('close-icon')
+    closeBtn.addEventListener('click', () => {
+        const newProjectCard = document.querySelector('.new-project-container')
+        newProjectCard.classList.toggle('hidden')
+    })
     closeBtn.appendChild(closeIcon)
     closeContainer.appendChild(closeBtn)
 
