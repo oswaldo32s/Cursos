@@ -2,8 +2,8 @@
     --primary-100:#ff9100;
     --primary-200:#ff5e00;
     --primary-300:#4b1100;
-    --accent-100:#00aeff;
-    --accent-200:#006c9e;
+    --accent-100:#84eff7;
+    --accent-200:#008f99;
     --text-100:#222222;
     --text-200:#494949;
     --bg-main:#ffffff;
@@ -36,4 +36,40 @@ body {
   
 h1, h2, h3, h4 {
     font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.hidden {
+    display: none;
+}
+
+.small-button {
+    background-color: #00000000;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.main-header {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    display: flex;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.main-title {
+    margin: 0 5px;
+}
+
+.theme-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,12 +1,14 @@
 import './style.css';
+import { newElement } from './functions/newElement';
+import MainHeader from './components/mainHeader';
 
-function component() {
-  const element = document.createElement('h1');
+// get a big component as my website
+function myApp() {
+  const website = newElement('div', '', ['main-page'])
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = 'Hello! This is the basic structure for my To do List'
+  website.appendChild(MainHeader())
 
-  return element;
+  return website
 }
 
-document.body.appendChild(component());
+document.body.appendChild(myApp());
