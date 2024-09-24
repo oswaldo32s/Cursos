@@ -1,4 +1,4 @@
-import { newElement } from "../functions/newElement"
+import newElement from "../functions/newElement"
 import sunPNG from '../assets/icons/sun.png'
 import moonPNG from '../assets/icons/moon.png'
 import todoPNG from '../assets/icons/todo-list.png'

@@ -1,4 +1,4 @@
-import { newElement } from "../../functions/newElement";
+import newElement from "../../functions/newElement";
 import projectNav from "./projectNav";
 
 export default function sideNav() {

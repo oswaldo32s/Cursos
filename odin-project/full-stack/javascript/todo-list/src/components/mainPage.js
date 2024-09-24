@@ -1,4 +1,4 @@
-import { newElement } from "../functions/newElement";
+import newElement from "../functions/newElement";
 import sideNav from "./sideNav/sideNav";
 
 export default function mainPage() {

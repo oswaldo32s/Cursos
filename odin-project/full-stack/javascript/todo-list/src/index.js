@@ -1,5 +1,5 @@
 import './style.css';
-import { newElement } from './functions/newElement';
+import newElement from './functions/newElement';
 import MainHeader from './components/mainHeader';
 import mainPage from './components/mainPage';
 

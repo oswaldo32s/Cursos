@@ -1,4 +1,4 @@
-export function newElement(elementType, textContent, classes = []) {
+export default function newElement(elementType, textContent, classes = []) {
   const element = document.createElement(elementType);
   element.textContent = textContent;
   
