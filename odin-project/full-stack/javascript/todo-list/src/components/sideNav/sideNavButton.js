@@ -3,7 +3,9 @@ import { newIcon } from "../../functions/newIcon";
 
 
 export default function sideNavButton(iconPNG, alt, spanText, addClass = [], lastIcon, lIconDescription, lastIconClass) {
+  const sideNavButtonSection = newElement('section', '', ['side-nav-btn-section'])
   const button = newElement('button', '', ['side-nav-btn'])
+  const rightButton = newElement('button', '', ['right-button'])
 
   if (Array.isArray(addClass)) {
     addClass.forEach((className) => {
@@ -16,11 +18,14 @@ export default function sideNavButton(iconPNG, alt, spanText, addClass = [], las
 
   button.appendChild(icon)
   button.appendChild(text)
+  sideNavButtonSection.appendChild(button)
 
   if (lastIcon) {
     const endIcon = newIcon(lastIcon, lIconDescription, lastIconClass)
-    button.appendChild(endIcon)
+    rightButton.appendChild(endIcon)
   }
 
-  return button
+  sideNavButtonSection.appendChild(rightButton)
+
+  return sideNavButtonSection
 }

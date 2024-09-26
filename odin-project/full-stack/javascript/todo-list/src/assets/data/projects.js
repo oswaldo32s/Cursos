@@ -5,10 +5,10 @@ export const projectData = [
   },
   {
     projectID: 2,
-    projectName: 'DropDown Menu Delete'
+    projectName: 'Spotify'
   },
   {
     projectID: 3,
-    projectName: 'Main Website'
+    projectName: 'To Do List'
   }
 ]
