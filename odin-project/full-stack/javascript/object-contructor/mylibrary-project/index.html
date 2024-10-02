@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script src="./formValidation.js" defer></script>
     <title>My Library</title>
 </head>
 <body>
@@ -28,23 +29,27 @@
         </section>
         <section class="add-book">
             <h2>Add New Book</h2>
-            <form class="add-book-form" action="#">
+            <form class="add-book-form" action="#" novalidate>
                 <div class="small-inputs">
                     <div class="question-container">
                         <label class="new-book-form-label" for="book-name">Name:</label><br>
                         <input class="form-input" id="book-name" type="text" minlength="4" required>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="question-container">
                         <label class="new-book-form-label" for="book-author">Author:</label><br>
                         <input class="form-input" id="book-author" type="text" minlength="10" required>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="question-container">
                         <label class="new-book-form-label" for="book-year">Year:</label><br>
                         <input class="form-input" id="book-year" type="number" min="0" required>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="question-container">
                         <label class="new-book-form-label" for="book-pages">Pages:</label><br>
                         <input class="form-input" id="book-pages" type="number" min="0" required>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                     <div class="question-container">
                         <label class="new-book-form-label" for="book-read">Read:</label><br>
@@ -52,10 +57,12 @@
                             <option value="I already read it">Yes</option>
                             <option value="No, I have not read it">No</option>
                         </select>
+                        <span class="error" aria-live="polite"></span>
                     </div>
                 </div>
                 <label class="new-book-form-label" for="book-description">Description:</label>
                 <textarea id="book-description" class="description-input form-input" name="description" id="description" required></textarea>
+                <span class="error" aria-live="polite"></span>
                 <button class="add-book-btn" type="button">Add Book</button>
             </form>
         </section>
