@@ -1,0 +1,56 @@
+.mainHeader {
+  align-items: center;
+  background-color: var(--dark-accent);
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: var(--light-text);
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.headerNav {
+  height: 100%;
+  display: flex;
+
+}
+
+.themeBtn {
+  padding: 0 10px;
+  background-color: #00000000;
+  border: none;
+  cursor: pointer;
+}
+
+.themeBtn:hover {
+  background-color: var(--dark-accent-hover);
+}
+
+.themeSVG {
+  stroke: var(--light-text);
+}
+
+.headerUl {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.headerLi {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.headerLi:hover {
+  background-color: var(--dark-accent-hover);
+}
