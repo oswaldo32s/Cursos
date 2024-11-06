@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call</title>
+    <script defer>
+        ID = "B4XLE2CYZD2JB9KYKH63NJMJ2";
+        city = "guadalajara";
+
+        fetch(
+          `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${ID}`
+        )
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data)
+            console.log(data.resolvedAddress)
+            const container = document.querySelector('.wContainer')
+            container.innerHTML = `<h3>${data.resolvedAddress}</h3><span>${data.days[0].datetime}</span><span>${data.days[0].description}</span><br><span>${data.days[0].temp} F</span>`
+
+          })
+          .catch(function (error) {
+            console.log(Error("Error: ", error));
+          });
+    </script>
+</head>
+<body>
+    <h1>Weather</h1>
+    <div class="wContainer">
+
+    </div>
+</body>
+</html>
